@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block title %}Login{% endblock %}
+
+{% block content %}
+<h1>
+    This is the login page
+</h1>
+{{ text + "..." }}
+
+{% if boolean == True %}
+Yes it is true!
+
+{% elif boolean == False %}
+No it is not true.
+
+{% else %}
+Something went wrong.
+
+{% endif %}
+
+{% endblock %}
