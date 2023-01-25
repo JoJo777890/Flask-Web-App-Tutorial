@@ -9,7 +9,7 @@ DB_NAME = 'database.db'
 def create_app():
     app = Flask(__name__)
     app.config['SECRET_KEY'] = 'Website Tutorial'
-    app.config['SQLALCHEMT_DATABASE_URI'] = F'aqlite:///{DB_NAME}'
+    app.config['SQLALCHEMY_DATABASE_URI'] = F'sqlite:///{DB_NAME}'
     db.init_app(app)
 
     from .views import views
